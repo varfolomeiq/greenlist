@@ -615,7 +615,42 @@ body {
 .advantage__description--celebrate {
 	padding: 0 20px 0 0;
 }
-
+@media (max-width: 1200px) {
+	.advantage__description {
+		padding: 0;
+	}
+}
+@media (max-width: 992px) {
+	.advantage__description,
+	.advantage__img {
+		width: 50%;
+	}
+	.advantage__title {
+		font-size: 40px;
+		line-height: 50px;
+	}
+}
+@media (max-width: 767px) {
+	.advantage {
+		padding: 220px 0 0 0;
+	}
+	.advantage__row {
+		flex-direction: column;
+	}
+	.advantage__description,
+	.advantage__img {
+		width: 100%;
+		text-align: center;
+	}
+	.advantage__title {
+		font-size: 28px;
+		line-height: 30px;
+	}
+	.advantage__text {
+		max-width: 100%;
+		font-size: 16px;
+	}
+}
 /*-------------------------FOOTER-------------------------*/
 .page-footer {
 	padding: 119px 0 32px 0;
