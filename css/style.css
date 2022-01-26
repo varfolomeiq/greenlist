@@ -682,3 +682,37 @@ body {
 	line-height: 24px;
 	color: #fff;
 }
+@media (max-width: 1200px) {
+	.page-footer {
+		padding: 70px 0 20px 0;
+	}
+	.page-footer__text,
+	.page-footer__link {
+		font-size: 18px;
+		line-height: 1;
+	}
+}
+@media (max-width: 992px) {
+	.page-footer {
+		padding: 40px 0 20px 0;
+	}
+
+	.page-footer__wrapper {
+		margin-bottom: 50px;
+	}
+}
+@media (max-width: 767px) {
+	.title {
+		font-size: 34px;
+	}
+	.page-footer__title {
+		margin-bottom: 25px;
+	}
+	.page-footer__wrapper {
+		margin-bottom: 0;
+	}
+	.page-footer__text,
+	.page-footer__link {
+		font-size: 14px;
+	}
+}
