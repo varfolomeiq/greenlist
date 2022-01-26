@@ -1,0 +1,419 @@
+/*-------------------------BASE-------------------------*/
+
+html {
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+img,
+a,
+p,
+span {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+body {
+	color: #000;
+	font-size: 18px;
+	line-height: 27px;
+}
+
+/*-------------------------GENERAL-------------------------*/
+.container {
+	width: 100%;
+	max-width: 1440px;
+	margin: 0 auto;
+	padding: 0 72px;
+}
+
+.btn {
+	display: inline-block;
+	position: relative;
+	background-color: #fff;
+	color: #023a15;
+	border-radius: 4px;
+	font-size: 16px;
+	line-height: 24px;
+	padding: 14px 16px 14px 48px;
+}
+
+.btn::before {
+	content: "";
+	display: block;
+	position: absolute;
+	transform: translate(-33px, 2px);
+	background-image: url(../img/icon/btn-img.png);
+	background-repeat: no-repeat;
+	width: 24px;
+	height: 24px;
+}
+
+.title {
+	font-family: "GT Super Display Super", serif;
+	font-weight: 900;
+	font-size: 110px;
+	line-height: 1;
+	color: #fff;
+}
+
+.text {
+	font-size: 12px;
+	line-height: 13px;
+	color: #fff;
+}
+
+.title span {
+	color: #f09c96;
+}
+
+/*-------------------------HEADER-------------------------*/
+.page-header {
+	background: #023a15;
+	padding-top: 90px;
+	padding-bottom: 147px;
+}
+
+.page-header__wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 80px;
+}
+
+.main-nav__list {
+	display: flex;
+	list-style: none;
+}
+
+.main-nav__item {
+	margin: 0 30px 0 0;
+}
+
+.main-nav__item:last-child {
+	margin: 0;
+}
+
+.main-nav__link {
+	font-size: 16px;
+	line-height: 24px;
+	color: #fff;
+	font-weight: 500;
+}
+
+.logo__image {
+	line-height: 0;
+}
+
+.header-content {
+	display: flex;
+}
+
+.header-content__left,
+.header-content__right {
+	width: 648px;
+	max-width: 100%;
+}
+
+.header-content__title {
+	margin-bottom: 40px;
+}
+
+.header-content__btn {
+	margin-bottom: 30px;
+}
+
+.img-wrapper {
+	position: relative;
+	height: 100%;
+}
+
+.img-wrapper__coffee,
+.img-wrapper__salad,
+.img-wrapper__line {
+	font-size: 0;
+	line-height: 0;
+	position: absolute;
+	max-width: 100%;
+}
+
+.img-wrapper__coffee img,
+.img-wrapper__salad img {
+	width: 322px;
+	height: auto;
+}
+
+.img-wrapper__coffee::after,
+.img-wrapper__salad::after {
+	content: "";
+	display: block;
+	background-repeat: no-repeat;
+	width: 60px;
+	height: 60px;
+	position: absolute;
+}
+
+.img-wrapper__coffee::after {
+	background-image: url(../img/avatar-woman.jpg);
+	top: -30px;
+	left: -30px;
+}
+
+.img-wrapper__salad::after {
+	background-image: url(../img/avatar-man.jpg);
+	top: -30px;
+	left: -30px;
+}
+
+.img-wrapper__coffee {
+	top: 30px;
+	left: 85px;
+	z-index: 2;
+}
+
+.img-wrapper__salad {
+	bottom: -80px;
+	right: 0;
+	z-index: 2;
+}
+
+.img-wrapper__line {
+	left: 76px;
+	top: 20px;
+	z-index: 1;
+}
+.img-wrapper__line img {
+	max-width: 100%;
+	height: auto;
+}
+
+.header {
+	position: absolute;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 50;
+}
+
+.header__body {
+	height: 80px;
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header__list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	position: relative;
+	z-index: 2;
+}
+
+.header__list li {
+	margin-left: 20px;
+}
+
+.header__link {
+	color: #fff;
+	text-decoration: none;
+	font-size: 18px;
+}
+
+.header__logo {
+	z-index: 3;
+}
+
+.header__logo img {
+	max-width: 100%;
+	display: block;
+}
+
+.content {
+	margin-top: 100px;
+}
+
+.content__text {
+	font-size: 16px;
+	line-height: 25px;
+}
+
+.content__text p {
+	margin-bottom: 20px;
+}
+
+.header__burger {
+	display: none;
+}
+
+/*-------------------------ABOUT-------------------------*/
+.about {
+	padding: 120px 0 0 0;
+}
+
+.about-content__left {
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+}
+
+.about-content__right {
+	display: flex;
+	align-items: center;
+	width: 50%;
+	padding-left: 94px;
+}
+
+.about__title {
+	font-family: "GT Super Display Super", sans-serif;
+	font-size: 66px;
+	line-height: 84px;
+	color: #000;
+	margin-bottom: 35px;
+}
+
+.about__text {
+	width: 100%;
+	max-width: 495px;
+	margin-bottom: 127px;
+}
+
+.about__image {
+	font-size: 0;
+	line-height: 0;
+}
+
+.about__image img {
+	margin-bottom: -55px;
+	max-width: 100%;
+	height: auto;
+}
+
+.about-content__column {
+	display: flex;
+}
+
+.about__column--pink {
+	text-align: center;
+	padding-top: 180px;
+	background-color: #ffe6e2;
+}
+
+.about-content__column--pink {
+	align-items: center;
+	flex-direction: column;
+}
+
+.about__title--pink {
+	width: 100%;
+	max-width: 720px;
+	margin-bottom: 40px;
+}
+
+.about__text--pink {
+	width: 100%;
+	max-width: 540px;
+	margin-bottom: 80px;
+}
+
+.about__image--pink {
+	margin-bottom: -120px;
+	padding: 0 15px;
+}
+
+/*-------------------------ADVANTAGE-------------------------*/
+
+.advantage {
+	padding: 180px 0 64px 0;
+}
+
+.advantage__img {
+	font-size: 0;
+	line-height: 0;
+}
+
+.advantage__img img {
+	max-width: 100%;
+	height: auto;
+}
+.advantage__row {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.advantage__title {
+	font-family: "GT Super Display Super", sans-serif;
+	font-size: 53px;
+	line-height: 72px;
+	margin-bottom: 16px;
+}
+
+.advantage__text {
+	width: 100%;
+	max-width: 375px;
+}
+
+.advantage__row--celebrate {
+	flex-direction: row-reverse;
+}
+
+.advantage__description {
+	padding: 0 0 0 20px;
+}
+
+.advantage__description--celebrate {
+	padding: 0 20px 0 0;
+}
+
+/*-------------------------FOOTER-------------------------*/
+.page-footer {
+	padding: 119px 0 32px 0;
+	background-color: #023a15;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.page-footer__btn {
+	margin-bottom: 13px;
+}
+
+.page-footer__wrapper {
+	width: 100%;
+	max-width: 850px;
+	margin-bottom: 165px;
+	padding: 0 15px;
+}
+
+.page-footer__title {
+	margin-bottom: 41px;
+}
+
+.page-footer__link {
+	font-size: 15px;
+	line-height: 24px;
+	color: #fff;
+}
